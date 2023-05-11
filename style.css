@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(120deg, #bd62e7, #4ca2a2);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: rgb(238, 239, 201);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form .result {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+form .result input {
+    border: 0;
+    outline: 0;
+    width: 315px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: right;
+    color: black;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+.button,
+.operator {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 15px rgba(176, 175, 175, 0.963), 5px 5px 15px rgba(122, 122, 122, 0.947);
+    background: transparent;
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form input.AC {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 15px rgba(176, 175, 175, 0.963), 5px 5px 15px rgba(122, 122, 122, 0.947);
+    background: transparent;
+    font-size: 35px;
+    color: goldenrod;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form input.C {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 15px rgba(176, 175, 175, 0.963), 5px 5px 15px rgba(122, 122, 122, 0.947);
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 10px;
+    color: darkgreen;
+}
+
+form input.operator {
+    color: darkslateblue;
+}
+
+form input.equal {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 15px rgba(176, 175, 175, 0.963), 5px 5px 15px rgba(122, 122, 122, 0.947);
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 10px;
+    color: red;
+}
