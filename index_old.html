@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <i class="fa-solid fa-calculator"></i>
+            <form>
+                <div class="result">
+                    <input type="text" id="result">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="result.value +='7'">
+                    <input type="button" value="8" onclick="result.value +='8'">
+                    <input type="button" value="9" onclick="result.value +='9'">
+                    <input type="button" value="AC" class="AC" onclick="result.value =''">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="result.value +='4'">
+                    <input type="button" value="5" onclick="result.value +='5'">
+                    <input type="button" value="6" onclick="result.value +='6'">
+                    <input type="button" value="C" class="C" onclick="result.value = result.value.slice(0,-1)">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="result.value +='1'">
+                    <input type="button" value="2" onclick="result.value +='2'">
+                    <input type="button" value="3" onclick="result.value +='3'">
+                    <input type="button" value="/" onclick="result.value +='/'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="+" onclick="result.value +='+'" class="operator">
+                    <input type="button" value="-" onclick="result.value +='-'" class="operator">
+                    <input type="button" value="*" onclick="result.value +='*'" class="operator">
+                    <input type="button" value="%" onclick="result.value +='%'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="result.value +='00'">
+                    <input type="button" value="0" onclick="result.value +='0'">
+                    <input type="button" value="." onclick="result.value +='.'" class="operator">
+                    <input type="button" value="=" onclick="result.value = eval(result.value)" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
